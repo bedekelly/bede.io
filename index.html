@@ -13,18 +13,30 @@
     />
 
     <!-- Verification for G-Suite -->
-    <meta name="google-site-verification" content="ztDFbQH4DDKJXSNyL5tRzc8Rn6K8sCNtnbVOX1DiuAk" />
+    <meta
+      name="google-site-verification"
+      content="ztDFbQH4DDKJXSNyL5tRzc8Rn6K8sCNtnbVOX1DiuAk"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Montserrat:800,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <nav>
-      <a class="cv-link" href="cv.pdf">CV</a>
-      <a class="blog-link" href="https://blog.bede.io">Blog</a>
-      <a class="projects-link" href="/projects">Projects</a>
-    </nav>
+    <div id="top-row">
+      <span id="performance"></span>
+
+      <nav>
+        <a class="cv-link" href="cv.pdf">CV</a>
+        <a class="blog-link" href="https://blog.bede.io">Blog</a>
+        <a class="projects-link" href="/projects">Projects</a>
+      </nav>
+    </div>
 
     <heading>
       <img draggable="false" src="images/face.jpeg" alt="Bede Kelly's face" />
@@ -48,26 +60,29 @@
 
     <section class="projects">
       <h3>Projects</h3>
-      <p>The <a class="projects-link" href="/projects">projects page</a> has a
-        selection of side projects ranging from complex web applications
-        to quick automation tools; using a broad range of languages, frameworks
-        and tools. &nbsp;<a class="projects-link" href="/projects">Take a look ➡</a></p>
+      <p>
+        The <a class="projects-link" href="/projects">projects page</a> has a
+        selection of side projects ranging from complex web applications to
+        quick automation tools; using a broad range of languages, frameworks and
+        tools. &nbsp;<a class="projects-link" href="/projects">Take a look ➡</a>
+      </p>
     </section>
 
     <section class="findme">
       <h3>Contact</h3>
       <p>
         To get in touch, shoot him an email at
-        <a class="mail-link" href="#">contact@bede.io</a>.
-        (Or if you're into security, he's at
+        <a class="mail-link" href="#">contact@bede.io</a>. (Or if you're into
+        security, he's at
         <a class="keybase-link" href="https://keybase.io/bede">
-          keybase.io/bede</a>).
+          keybase.io/bede</a
+        >).
       </p>
       <ul class="contact-methods">
         <li>
           <a href="https://github.com/bedekelly">GitHub</a>
         </li>
-	<li>
+        <li>
           <a href="https://codepen.io/bedekelly">CodePen</a>
         </li>
 
@@ -80,7 +95,16 @@
       </ul>
     </section>
 
-
-
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          const { loadEventEnd, navigationStart } = performance.timing;
+          const perfElement = document.querySelector("#performance");
+          perfElement.innerText = `Loaded in ${
+            loadEventEnd - navigationStart
+          }ms`;
+        }, 0);
+      };
+    </script>
   </body>
 </html>

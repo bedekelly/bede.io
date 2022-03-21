@@ -1,7 +1,7 @@
 :root {
-  --background: #FFFCF9;
+  --background: #fffcf9;
   --text: #454545;
-/*
+  /*
   --accent1: #00Bede;
   --accent2: #EA5D4B;
 */
@@ -9,11 +9,15 @@
   --accent2: rgb(220, 36, 31);
 }
 
-html, body {
+html,
+body {
   width: 100%;
 }
 
-nav, h1, h2, h3 {
+nav,
+h1,
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -22,8 +26,8 @@ html {
   /* This sets a nice scrolling colour! */
   color: var(--text);
   background: var(--accent1);
-   /*border-top: 5px solid var(--accent2);*/
-/*   border-bottom: 5px solid var(--accent2); */
+  /*border-top: 5px solid var(--accent2);*/
+  /*   border-bottom: 5px solid var(--accent2); */
   text-rendering: optimizeLegibility;
   height: 100%;
 }
@@ -34,8 +38,8 @@ body {
   background: var(--background);
   padding-bottom: 20px;
   padding-top: calc(10px + 2vh);
-   border-top: 1.5vh solid var(--accent1);
-   border-bottom: 1.5vh solid var(--accent1);
+  border-top: 1.5vh solid var(--accent1);
+  border-bottom: 1.5vh solid var(--accent1);
 }
 
 img {
@@ -52,8 +56,6 @@ nav {
   display: block;
   width: 100%;
   text-align: right;
-  padding-top: calc(10px + 0.7vh);
-  padding-right: calc(5vw + 0.5em + 0.25vw);
   font-size: calc(8pt + 1vw);
 }
 
@@ -113,7 +115,7 @@ h3 {
 }
 
 section > p {
-  font-family: "Lora";
+  font-family: "Lora", serif;
   font-size: calc(10pt + 0.5vw);
   line-height: 1.6;
 }
@@ -142,7 +144,6 @@ section > p {
   margin: 7px 20px 7px 7px;
 }
 
-
 .findme {
   margin-bottom: 25px;
 }
@@ -161,4 +162,23 @@ section > p {
 .projects-link {
   font-weight: bold;
   white-space: nowrap;
+}
+
+#top-row {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: calc(10px + 0.7vh);
+  padding-right: calc(5vw + 0.5em + 0.25vw);
+  padding-left: calc(5vw + 0.5em + 0.25vw);
+  font-size: calc(8pt + 1vw);
+  padding-top: calc(10px + 0.7vh);
+}
+
+#performance {
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: calc(4pt + 1vw);
 }
