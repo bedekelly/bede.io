@@ -1,7 +1,7 @@
 :root {
-  --background: #FFFCF9;
+  --background: #fffcf9;
   --text: #454545;
-/*
+  /*
   --accent2: #00Bede;
   --accent1: #EA5D4B;
 */
@@ -9,11 +9,15 @@
   --accent2: rgb(0, 152, 216);
 }
 
-html, body {
+html,
+body {
   width: 100%;
 }
 
-nav, h1, h2, h3 {
+nav,
+h1,
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -45,7 +49,7 @@ nav {
   width: 100%;
   text-align: right;
   padding-top: calc(10px + 0.7vh);
-  padding-right: calc(5vw + 0.5em + 0.25vw);;
+  padding-right: calc(5vw + 0.5em + 0.25vw);
   font-size: calc(8pt + 1vw);
 }
 
@@ -66,7 +70,7 @@ nav > a {
 .twitter-link:hover,
 .mail-link:hover,
 .cv-link:hover,
- a:hover {
+a:hover {
   color: var(--accent2);
   transition: ease color 0.1s;
 }
@@ -134,12 +138,10 @@ section > p {
   margin: 7px;
 }
 
-
 .contact-methods li {
   display: inline;
   margin: 7px 20px 7px 7px;
 }
-
 
 .findme {
   margin-bottom: 25px;
@@ -206,7 +208,8 @@ section > p {
   user-select: none;
 }
 
-.collapsed,.expanded {
+.collapsed,
+.expanded {
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
@@ -221,16 +224,16 @@ section > p {
 }
 
 .expanded > .section-title:before {
-  content: "\2013  ";  /* Equivalent to &ndash; */
+  content: "\2013  "; /* Equivalent to &ndash; */
 }
 
 .section-title:before {
-	width: 1.3ch;
-	display: inline-block;
+  width: 1.3ch;
+  display: inline-block;
 }
 
 @media (min-width: 700px) {
-  .project:not(.video-project)>.grid {
+  .project:not(.video-project) > .grid {
     grid-template-areas: "description picture";
     grid-template-columns: 15fr 6fr;
   }
@@ -274,7 +277,6 @@ img {
   margin-bottom: 7vh;
 }
 
-
 .more-projects {
   font-family: "Lora", serif;
   font-size: calc(10pt + 0.5vw);
@@ -290,13 +292,11 @@ img {
   font-weight: bold;
 }
 
-
 .feature-video {
   margin-top: 0.5em;
   max-width: 80vmin;
   max-height: 80vmin;
 }
-
 
 @media (min-width: 700px) {
   .feature-video {
@@ -305,7 +305,7 @@ img {
   }
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
   .video-project iframe {
     width: 80vmin;
   }
