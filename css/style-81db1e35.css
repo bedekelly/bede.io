@@ -1,14 +1,3 @@
-:root {
-  --background: #fffcf9;
-  --text: #454545;
-  /*
-  --accent1: #00Bede;
-  --accent2: #EA5D4B;
-*/
-  --accent1: rgb(0, 152, 216);
-  --accent2: rgb(220, 36, 31);
-}
-
 html,
 body {
   width: 100%;
@@ -40,6 +29,7 @@ body {
   padding-top: calc(10px + 2vh);
   border-top: 1.5vh solid var(--accent1);
   border-bottom: 1.5vh solid var(--accent1);
+  color: var(--text);
 }
 
 img {
@@ -92,6 +82,12 @@ h1 {
   text-transform: uppercase;
 }
 
+@media (prefers-color-scheme: dark) {
+  h2 {
+    color: var(--accent1);
+  }
+}
+
 h2 {
   font-size: calc(12pt + 2vw);
   margin: 0 auto;
@@ -125,7 +121,7 @@ section > p {
 }
 
 ::selection {
-  background: var(--accent2);
+  background: var(--accent1);
 }
 
 :not(p)::selection {

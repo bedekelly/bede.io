@@ -1,12 +1,12 @@
 :root {
-  --background: #fffcf9;
-  --text: #454545;
-  /*
-  --accent2: #00Bede;
-  --accent1: #EA5D4B;
-*/
   --accent1: rgb(220, 36, 31);
   --accent2: rgb(0, 152, 216);
+}
+
+@media (prefers-color-scheme: dark) {
+  .project-title {
+    color: var(--text) !important;
+  }
 }
 
 html,
@@ -41,6 +41,7 @@ body {
   padding-top: calc(10px + 2vh);
   border-top: 1.5vh solid var(--accent2);
   border-bottom: 1.5vh solid var(--accent2);
+  color: var(--text);
 }
 
 nav {

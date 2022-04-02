@@ -39,3 +39,21 @@
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/montserrat-v23-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+:root {
+  --background: #fffcf9;
+  --text: #454545;
+  /*
+  --accent1: #00Bede;
+  --accent2: #EA5D4B;
+*/
+  --accent1: rgb(0, 152, 216);
+  --accent2: rgb(220, 36, 31);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background: #333;
+    --text: #efeffb;
+  }
+}
