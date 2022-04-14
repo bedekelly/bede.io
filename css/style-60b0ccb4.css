@@ -93,7 +93,8 @@ h1 {
 }
 
 @media (prefers-color-scheme: dark) {
-  h2 {
+  h2,
+  h3 {
     color: var(--accent1);
   }
 }
@@ -130,13 +131,10 @@ section > p {
   font-weight: bold;
 }
 
-::selection {
-  background: var(--accent1);
-}
-
 @media (prefers-color-scheme: dark) {
-  h2::selection {
-    background: white;
+  h2::selection,
+  h3::selection {
+    background: black;
   }
 }
 
