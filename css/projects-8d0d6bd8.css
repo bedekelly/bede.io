@@ -269,6 +269,12 @@ img {
   box-shadow: 0 0 5px lightgrey;
 }
 
+@media (prefers-color-scheme: dark) {
+  img {
+    box-shadow: 0 0 5px black;
+  }
+}
+
 .projects-intro {
   margin-bottom: 7vh;
 }
