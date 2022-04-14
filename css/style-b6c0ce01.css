@@ -32,6 +32,16 @@ body {
   color: var(--text);
 }
 
+.about > p:first-of-type {
+  font-size: calc(12pt + 1vw);
+  line-height: 1;
+}
+
+.about > p {
+  line-height: 1.68;
+  margin-bottom: 2em;
+}
+
 img {
   width: 100px;
   height: 100px;
