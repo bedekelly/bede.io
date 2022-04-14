@@ -124,8 +124,10 @@ section > p {
   background: var(--accent1);
 }
 
-:not(p)::selection {
-  background: none;
+@media (prefers-color-scheme: dark) {
+  h2::selection {
+    background: white;
+  }
 }
 
 .contact-methods {

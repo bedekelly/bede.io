@@ -17,10 +17,10 @@ export default JSON.parse(`
           "image": "images/projects/AnimatedSparkline.gif"
         },
         {
-          "title": "Budget Dashboard",
-          "description": "As the UI for a serverless budget tracker (created using AWS Lambda and DynamoDB), I built a web dashboard in Elm with a burndown chart and a sortable table with my top spending categories.",
-          "image": "images/projects/BudgetDashboard.png",
-          "url": "https://github.com/bedekelly/elm-dashboard"
+          "title": "Baseline",
+          "description": "A modern starting-point for performant and easy-to-develop React apps. Uses the GNU Make build system, and comes as standard with Vite, TypeScript, Storybook, Jest and Playwright. Feature flags provided by Flagsmith.",
+          "url": "https://github.com/bedekelly/baseline",
+          "image": "images/projects/Baseline.png"
         },
         {
           "title": "Workshops",
