@@ -2,3 +2,5 @@
 .DS_Store
 private.key
 *.bak
+analytics.json
+detailed-analytics.json
