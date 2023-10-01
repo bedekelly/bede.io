@@ -1,156 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Bede Kelly</title>
-    <meta
-      name="Description"
-      content="Bede Kelly is a developer based near London, UK. He's seeking new opportunities in full-stack web development."
-    />
+<html lang="en-GB">
+<head>
+<title>Bede Kelly</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 
-    <!-- Verification for G-Suite -->
-    <meta
-      name="google-site-verification"
-      content="rFJ33xhJzqnkwFeseibWoH1tU-keNpIaQNZwj6ik_lQ"
-    />
-    <meta
-      name="google-site-verification"
-      content="ztDFbQH4DDKJXSNyL5tRzc8Rn6K8sCNtnbVOX1DiuAk"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+html {
+  font-family: monospace;
+  background: #ececec;
+  color: #222;
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
 
-    <link
-      rel="preload"
-      href="/fonts/lora-v23-latin-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/lora-v23-latin-700.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
 
-    <link
-      rel="preload"
-      href="/fonts/montserrat-v23-latin-800.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/montserrat-v23-latin-900.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-    <link rel="stylesheet" href="css/shared-35204bbb.css" />
-    <link rel="stylesheet" href="css/style-60b0ccb4.css" />
-  </head>
+@media (max-width: 460px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-  <body>
-    <div id="top-row">
-      <span id="performance"></span>
+  nav>.divider {
+    display: none;
+  }
+}
 
-      <nav>
-        <a class="cv-link" href="cv.pdf">CV</a>
-        <a class="blog-link" href="https://blog.bede.io">Blog</a>
-        <a class="projects-link" href="/projects">Projects</a>
-      </nav>
-    </div>
+body {
+  border: 3px dotted #444;
+  padding: 5vmin;
+  max-width: 66vw;
+}
 
-    <heading>
-      <img
-        draggable="false"
-        src="images/face-f17a7ca7.jpg"
-        alt="Bede Kelly's face"
-      />
-      <h1>Bede Kelly</h1>
-      <h2>Full Stack Developer</h2>
-    </heading>
+#work-things {
+  margin-block: 0;
+}
 
-    <section class="about">
-      <p>Hi, I'm <strong>Bede!</strong> 👋🏻</p>
+p {
+  line-height: 1.6;
+}
 
-      <p>
-        I love making beautiful things that work <em>just right</em> and stay
-        rock-solid under pressure. Nothing beats the feeling of people being
-        <strong>thrilled</strong> with what I’ve built for them. Building
-        internal tools is often perfect for this, since my users are right there
-        in the same building.
-      </p>
-      <p>
-        If you’ve worked with me, you’ll know I don’t hide from tricky problems
-        — whether it’s a sluggish React app, an impossible-to-read regex or a
-        misbehaving load-balancer, I’ll dive in head-first.
-      </p>
+#final {
+  margin-block-end: 0;
+}
+</style>
 
-      <p>
-        A huge part of what I do isn’t technical — it’s building
-        <strong>genuine relationships</strong> and listening to honest feedback.
-        I’m at the top of my game when I can help people’s day-to-day
-        experience, so I make sure everyone knows they can speak freely around
-        me.
-      </p>
-
-      <p>
-        Jobs that let me thrive have <strong>quick feedback loops</strong>, and
-        lots of opportunities to learn from smart people around me. An ideal
-        workplace will let me share new things I’ve learnt by giving workshops,
-        speaking publicly, and mentoring more junior engineers.
-      </p>
-    </section>
-
-    <section class="projects">
-      <h3>Projects</h3>
-      <p>
-        Like a lot of programmers, I've got <em>way</em> too many side projects
-        to count. I've listed a few of my favourites on a separate page! I've
-        got Python projects, React, CSS, C, fractals, functional programming,
-        and loads more.
-        <a class="projects-link" href="/projects">Take a look ➡</a>
-      </p>
-    </section>
-
-    <section class="findme">
-      <h3>Contact</h3>
-      <p>
-        If you’d like to get in touch, you can drop me an email at
-        contact[at]bede.io — I’ll usually reply within a couple of days, but
-        feel free to nudge me again if it’s slipped through the cracks!
-      </p>
-      <ul class="contact-methods">
-        <li>
-          <a href="https://github.com/bedekelly">GitHub</a>
-        </li>
-        <li>
-          <a href="https://codepen.io/bedekelly">CodePen</a>
-        </li>
-
-        <li>
-          <a href="https://blog.bede.io">Blog</a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/bedekelly">LinkedIn</a>
-        </li>
-      </ul>
-    </section>
-
-    <script>
-      window.onload = () => {
-        setTimeout(() => {
-          const { loadEventEnd, navigationStart } = performance.timing;
-          const perfElement = document.querySelector("#performance");
-          perfElement.innerText = `Loaded in ${
-            loadEventEnd - navigationStart
-          }ms`;
-        }, 0);
-      };
-    </script>
-  </body>
+</head>
+<body>
+<h1>Bede Kelly</h1>
+<p>Jack-of-all-trades software engineer, enjoying time away from work.</p>
+<nav>
+  <p id="work-things">Public content:</p>
+  <a href="https://blog.bede.io">Blog</a>
+  <span class="divider">/</span>
+  <a href="/projects">Projects</a>
+  <span class="divider">/</span>
+  <a href="/cv">CV</a>
+</nav>
+<p id="final">Personal queries only to hello@this-site.</p>
+</body>
 </html>
